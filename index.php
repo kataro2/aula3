@@ -42,8 +42,10 @@
         echo "<h2>Verificação do tipo de dados</h2>";
         echo "Nome: .gettype($nome) ";
         echo "<br>";
-        echo "Email: .gettype($email) . "<br>";
-        echo "Idade: .gettype($idade) . "<br>";
+        echo "Email: .gettype($email)";
+        echo "<br>";
+        echo "Idade: .gettype($idade)";
+        echo "<br>";
 
         echo "<br>";
         echo "<br>";
