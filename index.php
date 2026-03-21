@@ -24,6 +24,40 @@
     } else {
         echo "O num2 não é uma string";
     }   
+
+    if($_POST["REQUEST_METHOD"] == "POST") {
+        
+        $nome = $_POST["nome"];
+        $email = $_POST["email"];
+        $idade = $_POST["idade"];
+
+        echo "<h2>Dados do formulário</h2>";
+        echo "Seja bem-vindo, " . $nome . "<br>";
+        echo "Seu email é: " . $email . "<br>";
+        echo "Sua idade é: " . $idade . "<br>";
+
+        echo "br>";
+        echo "br>";
+
+        echo "<h2>Verificação do tipo de dados</h2>";
+        echo "Nome: .gettype($nome) ";
+        echo "<br>";
+        echo "Email: .gettype($email) . "<br>";
+        echo "Idade: .gettype($idade) . "<br>";
+
+        echo "<br>";
+        echo "<br>";
+
+        echo "<h3>Verificação de Tipo de Dados</h3>";
+        echo $idade = intval($idade);
+        echo "Tipo Atual - Via função direta: " . gettype($idade);
+        echo  "<br>";
+        $idade = (int) $idade;
+        echo "Tipo Atual - Via Casting: " . gettype($idade);
+        } else {
+            echo "O num3 não é um inteiro";
+        } 
+    }
         
     
 ?>
