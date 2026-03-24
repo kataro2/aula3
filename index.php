@@ -59,7 +59,6 @@
         } else {
             echo "O num3 não é um inteiro";
         } 
-    }
-        
+              
     
 ?>
